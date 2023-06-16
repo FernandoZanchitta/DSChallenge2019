@@ -22,7 +22,7 @@ import pandas as pd
 import os.path  
 
 # Define the desired subsampling ratio
-subsampling_ratio = 0.02  # 1/10 of the rows
+subsampling_ratio = 0.1  # 1/10 of the rows
 
 # Define the file path
 file_path_feature_training = f'../dataset/{FILE_NAMES[0]}.csv'
