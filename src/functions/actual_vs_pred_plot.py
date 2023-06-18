@@ -2,7 +2,7 @@
 função do arquivo src/functions/actual_vs_pred_plot.py
 """
 import matplotlib.pyplot as plt
-def actual_vs_pred_plot(y_train,y_pred):
+def actual_vs_pred_plot(y_train,y_pred,model_name):
     """
     
     """
@@ -13,5 +13,5 @@ def actual_vs_pred_plot(y_train,y_pred):
     ax.plot([y_train.min(),y_train.max()], [y_train.min(), y_train.max()], 'k--',lw=0.2)
     ax.set_xlabel('Atual')
     ax.set_ylabel('Predito')
-    plt.suptitle("Atual vs Predito Scatter Plot",size=14)
+    plt.suptitle(model_name + ' - Actual vs Predicted Values',size=14)
     plt.show()
